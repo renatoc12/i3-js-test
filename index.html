@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<div class="quiz">
+<h1>Please choose answers:</h1>
+<div class="slideshow-container"  id="boxpaste">  
+</div>
+    <div class="navigation">
+    <button id="prev" onclick="plusQuestions(-1)">Previous</button>
+    <button id="next" onclick="plusQuestions(1)">Next</button>
+    <button id="result" onclick="ShowResults()">Show answers</button>
+    </div>
+    <button onclick="slidesJump(1)">Q1</button>
+    <button onclick="slidesJump(2)">Q2</button>
+    <button onclick="slidesJump(3)">Q3</button>
+    <button onclick="slidesJump(4)">Q4</button>
+<br>
+<div id="alert">Odabrali ste maksimalan broj odgovora!</div>
+<div id="answers" style="display: none;"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
